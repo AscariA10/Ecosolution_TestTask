@@ -1,4 +1,4 @@
-import { IconContainer } from "../../../components/common-styles/common-styles.styled";
+import { IconContainer } from "../../components/common-styles/common-styles.styled";
 
 export const Menu = () => {
    return (

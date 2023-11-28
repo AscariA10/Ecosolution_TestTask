@@ -11,6 +11,12 @@ export const HeaderWrapper = styled.header`
 export const PageLogoWrapper = styled.a`
    min-width: 269px;
    height: 40px;
+   @media (min-width: 768px) {
+      margin-right: 247px;
+   }
+   @media (min-width: 1280px) {
+      margin-right: 779px;
+   }
 `;
 
 export const MenuButton = styled.button`
