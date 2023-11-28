@@ -1,3 +1,5 @@
+import { DarkButton } from "../common-components/DarkButton";
+
 import { HeaderWrapper, PageLogoWrapper, MenuButton } from "./Header.styled";
 import { Container } from "../common-styles/common-styles.styled";
 
@@ -8,12 +10,13 @@ export const Header = () => {
    return (
       <Container>
          <HeaderWrapper>
-            <PageLogoWrapper>
+            <PageLogoWrapper href="/">
                <PageLogo />
             </PageLogoWrapper>
             <MenuButton>
                <Menu />
             </MenuButton>
+            <DarkButton title="Get in touch"></DarkButton>
          </HeaderWrapper>
       </Container>
    );

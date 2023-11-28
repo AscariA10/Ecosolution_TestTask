@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.header`
    padding: 36px 0px;
 `;
 
-export const PageLogoWrapper = styled.div`
+export const PageLogoWrapper = styled.a`
    min-width: 269px;
    height: 40px;
 `;
