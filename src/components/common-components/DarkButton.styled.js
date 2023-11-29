@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { colors } from "../common-styles/color";
+import { colors } from "../common-styles/colors";
 
 export const Button = styled.button`
    display: ${props => (props.alwaysVisible ? "flex" : "none")};
