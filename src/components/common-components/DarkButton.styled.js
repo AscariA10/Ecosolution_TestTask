@@ -11,7 +11,7 @@ export const Button = styled.button`
    border-radius: 32px;
 
    font-size: 16px;
-   letter-spacing: -0.032rem;
+   letter-spacing: -0.04em;
 
    @media (min-width: 768px) {
       display: flex;
