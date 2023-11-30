@@ -1,7 +1,16 @@
 import { LightButton } from "../../common-components/LightButton";
 
 import { Container } from "../../common-styles/common-styles.styled";
-import { HeroTitle, Section, Thumb, Picture, Definition } from "./Hero.styled";
+import {
+   HeroTitle,
+   Section,
+   Thumb,
+   Picture,
+   Definition,
+   Address,
+   Email,
+   HeroWrapper,
+} from "./Hero.styled";
 
 import { ArrowRight } from "../../../assets/svg-components/ArrowRight";
 
@@ -16,14 +25,18 @@ export const Hero = () => {
    return (
       <Container>
          <Section>
-            <HeroTitle>renewable energy for any task</HeroTitle>
-            <Definition>
-               Development and implementation of renewable non-polluting energy sources, generating
-               power generation using energy wind, sun, water, biomass
-            </Definition>
-            <LightButton title="Learn more" marginBottom="24px">
-               <ArrowRight />
-            </LightButton>
+            <HeroWrapper>
+               <HeroTitle>renewable energy for any task</HeroTitle>
+               <Definition>
+                  Development and implementation of renewable non-polluting energy sources,
+                  generating power generation using energy wind, sun, water, biomass
+               </Definition>
+               <LightButton title="Learn more" marginBottom="24px">
+                  <ArrowRight />
+               </LightButton>
+            </HeroWrapper>
+            <Address>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
+            <Email href="mailto: office@ecooptima.com.ua">office@ecosolution.com</Email>
             <Thumb>
                <Picture>
                   <source

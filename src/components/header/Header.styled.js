@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 36px 0px;
+   padding: 36px 0px 10px;
 `;
 
 export const PageLogoWrapper = styled.a`
