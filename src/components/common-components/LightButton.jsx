@@ -3,12 +3,18 @@ import { Button, InnerIcon } from "./LightButton.styled";
 export const LightButton = ({
    children,
    title = "button",
-   marginLeft = "auto",
+   marginTop = { mobile: "", tablet: "", desktop: "" },
+   marginLeft = { mobile: "", tablet: "", desktop: "" },
    marginRight = "auto",
-   marginBottom = "0x",
+   marginBottom = { mobile: "", tablet: "", desktop: "" },
 }) => {
    return (
-      <Button marginLeft={marginLeft} marginRight={marginRight} marginBottom={marginBottom}>
+      <Button
+         marginTop={marginTop}
+         marginLeft={marginLeft}
+         marginRight={marginRight}
+         marginBottom={marginBottom}
+      >
          {title}
          <InnerIcon>{children}</InnerIcon>
       </Button>

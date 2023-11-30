@@ -2,12 +2,14 @@ import { LightButton } from "../../common-components/LightButton";
 
 import { Container } from "../../common-styles/common-styles.styled";
 import {
+   Copyright,
    HeroTitle,
    Section,
    Thumb,
    Picture,
    Definition,
    Address,
+   AddressWrapper,
    Email,
    HeroWrapper,
 } from "./Hero.styled";
@@ -31,12 +33,20 @@ export const Hero = () => {
                   Development and implementation of renewable non-polluting energy sources,
                   generating power generation using energy wind, sun, water, biomass
                </Definition>
-               <LightButton title="Learn more" marginBottom="24px">
+               <LightButton
+                  title="Learn more"
+                  marginTop={{ mobile: "auto", tablet: "43px", desktop: "20px" }}
+                  marginBottom={{ mobile: "49px", tablet: "43px" }}
+                  marginLeft={{ mobile: "auto", tablet: "0" }}
+               >
                   <ArrowRight />
                </LightButton>
             </HeroWrapper>
-            <Address>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
-            <Email href="mailto: office@ecooptima.com.ua">office@ecosolution.com</Email>
+            <AddressWrapper>
+               <Address>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
+               <Email href="mailto: office@ecooptima.com.ua">office@ecosolution.com</Email>
+               <Copyright>ecosolution &copy; 2023</Copyright>
+            </AddressWrapper>
             <Thumb>
                <Picture>
                   <source
