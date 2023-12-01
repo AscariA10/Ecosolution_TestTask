@@ -28,5 +28,5 @@ export const IconContainer = styled.span`
    justify-content: center;
    align-items: center;
    width: ${props => props.width};
-   height: ${props => props.width};
+   height: ${props => props.height};
 `;

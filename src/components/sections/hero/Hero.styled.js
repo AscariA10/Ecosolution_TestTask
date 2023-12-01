@@ -95,7 +95,7 @@ export const AddressWrapper = styled.div`
 
       width: 100%;
 
-      border-bottom: 1px solid ${colors.accent};
+      border-bottom: 1px solid ${colors.ACCENT};
    }
    @media screen and (min-width: 768px) {
       flex-direction: row;
