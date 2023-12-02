@@ -5,9 +5,6 @@ import { LightButton } from "../../common-components/LightButton";
 import { colors } from "../../common-styles/colors";
 
 export const Section = styled.section`
-   width: 320px;
-   margin-left: auto;
-   margin-right: auto;
    padding-top: 136px;
    padding-bottom: 18px;
    @media screen and (min-width: 768px) {

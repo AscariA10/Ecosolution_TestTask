@@ -2,9 +2,12 @@ import styled from "@emotion/styled";
 import { colors } from "../../common-styles/colors";
 
 export const Section = styled.section`
-   width: 100%;
    padding: 18px 0;
 `;
+
+// export const ValuesContainer = styled.div`
+
+// `;
 
 export const Definition = styled.p`
    width: 320px;

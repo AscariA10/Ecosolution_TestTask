@@ -1,9 +1,8 @@
 import { SectionTitle } from "../../common-components/SectionTitle";
 import { ValueCard } from "./ValueCard/ValueCard";
 
-import { Container } from "../../common-styles/common-styles.styled";
-
 import { Definition, Section, ValueList } from "./Values.styled";
+import { Container } from "../../common-styles/common-styles.styled";
 
 import { Innovation } from "../../../assets/svg-components/values/Innovation";
 import { Openness } from "../../../assets/svg-components/values/Openness";
@@ -12,8 +11,8 @@ import { Responsibility } from "../../../assets/svg-components/values/Responsibi
 
 export const Values = () => {
    return (
-      <Container>
-         <Section>
+      <Section>
+         <Container>
             <SectionTitle title="main values of our company" />
             <Definition>
                EcoSolution envisions a world where sustainable energy solutions power a brighter and
@@ -47,7 +46,7 @@ export const Values = () => {
                   <Quality />
                </ValueCard>
             </ValueList>
-         </Section>
-      </Container>
+         </Container>
+      </Section>
    );
 };

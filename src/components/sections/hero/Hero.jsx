@@ -25,8 +25,8 @@ import maskGroupDesktop2x from "../../../assets/images/hero/mask-group-desktop@2
 
 export const Hero = () => {
    return (
-      <Container>
-         <Section>
+      <Section>
+         <Container>
             <HeroWrapper>
                <HeroTitle>renewable energy for any task</HeroTitle>
                <Definition>
@@ -61,7 +61,7 @@ export const Hero = () => {
                   <img src={maskGroup} />
                </Picture>
             </Thumb>
-         </Section>
-      </Container>
+         </Container>
+      </Section>
    );
 };

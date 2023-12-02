@@ -2,10 +2,33 @@ import styled from "@emotion/styled";
 import { colors } from "../common-styles/colors";
 
 export const HeaderWrapper = styled.header`
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
    padding: 36px 0px 10px;
+`;
+
+export const HeaderContainer = styled.div`
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 100%;
+   margin: 0 auto;
+
+   @media screen and (min-width: 480px) {
+      width: 480px;
+   }
+
+   @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-left: 30px;
+      padding-right: 30px;
+   }
+
+   @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
 `;
 
 export const PageLogoWrapper = styled.a`
