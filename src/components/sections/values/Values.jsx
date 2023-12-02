@@ -1,13 +1,16 @@
 import { SectionTitle } from "../../common-components/SectionTitle";
 import { ValueCard } from "./ValueCard/ValueCard";
 
-import { Definition, Section, ValueList } from "./Values.styled";
+import { Definition, Section, ValuesWrapper, Thumb } from "./Values.styled";
 import { Container } from "../../common-styles/common-styles.styled";
 
 import { Innovation } from "../../../assets/svg-components/values/Innovation";
 import { Openness } from "../../../assets/svg-components/values/Openness";
 import { Quality } from "../../../assets/svg-components/values/Quality";
 import { Responsibility } from "../../../assets/svg-components/values/Responsibility";
+
+import solar from "../../../assets/images/values/solar-tablet.jpg";
+import turbine from "../../../assets/images/values/turbine-tablet.jpg";
 
 export const Values = () => {
    return (
@@ -20,7 +23,7 @@ export const Values = () => {
                renewable energy, leading the way in innovative technologies that harness the power
                of nature to meet the world's energy needs.
             </Definition>
-            <ValueList>
+            <ValuesWrapper>
                <ValueCard
                   title="Openness"
                   description="to the world, people, new ideas and projects"
@@ -45,7 +48,13 @@ export const Values = () => {
                >
                   <Quality />
                </ValueCard>
-            </ValueList>
+               <Thumb>
+                  <img src={solar} />
+               </Thumb>
+               <Thumb>
+                  <img src={turbine} />
+               </Thumb>
+            </ValuesWrapper>
          </Container>
       </Section>
    );

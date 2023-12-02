@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { colors } from "../../../common-styles/colors";
 
-export const Card = styled.li`
+export const Card = styled.div`
    padding: 13px 12px 12px;
    background-color: ${colors.CARD_BACKGROUND};
 `;
