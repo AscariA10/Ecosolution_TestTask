@@ -14,4 +14,17 @@ export const Title = styled.h3`
    font-weight: 400;
    line-height: 1;
    letter-spacing: 0;
+
+   @media screen and (min-width: 768px) {
+      width: 272px;
+      margin-left: 0;
+      margin-bottom: 0;
+
+      font-size: 36px;
+   }
+   @media screen and (min-width: 1280px) {
+      width: 365px;
+
+      font-size: 48px;
+   }
 `;

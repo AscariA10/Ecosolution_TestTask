@@ -5,10 +5,10 @@ import { LightButton } from "../../common-components/LightButton";
 import { colors } from "../../common-styles/colors";
 
 export const Section = styled.section`
+   width: 100%;
    padding-top: 136px;
    padding-bottom: 18px;
    @media screen and (min-width: 768px) {
-      width: 708px;
       padding-top: 154px;
    }
    @media screen and (min-width: 1280px) {
@@ -83,6 +83,8 @@ export const AddressWrapper = styled.div`
    display: flex;
    flex-direction: column;
    position: relative;
+
+   width: 100%;
 
    &::before {
       content: "";

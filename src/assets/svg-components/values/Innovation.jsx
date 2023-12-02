@@ -1,8 +1,11 @@
 import { IconContainer } from "../../../components/common-styles/common-styles.styled";
 
-export const Innovation = () => {
+export const Innovation = ({
+   width = { mobile: "16px", tablet: "16px", desktop: "24px" },
+   height = { mobile: "16px", tablet: "16px", desktop: "24px" },
+}) => {
    return (
-      <IconContainer width="16px" height="16px">
+      <IconContainer width={width} height={height}>
          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                d="M6.40008 13.3333H9.60008C12.2667 13.3333 13.3334 12.2666 13.3334 9.59996V6.39996C13.3334 3.73329 12.2667 2.66663 9.60008 2.66663H6.40008C3.73341 2.66663 2.66675 3.73329 2.66675 6.39996V9.59996C2.66675 12.2666 3.73341 13.3333 6.40008 13.3333Z"

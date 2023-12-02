@@ -1,8 +1,11 @@
 import { IconContainer } from "../../../components/common-styles/common-styles.styled";
 
-export const Responsibility = () => {
+export const Responsibility = ({
+   width = { mobile: "16px", tablet: "16px", desktop: "24px" },
+   height = { mobile: "16px", tablet: "16px", desktop: "24px" },
+}) => {
    return (
-      <IconContainer width="16px" height="16px">
+      <IconContainer width={width} height={height}>
          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                d="M14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667"

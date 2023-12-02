@@ -30,6 +30,10 @@ export const IconContainer = styled.span`
    display: flex;
    justify-content: center;
    align-items: center;
-   width: ${props => props.width};
-   height: ${props => props.height};
+   width: ${props => props.width.mobile};
+   height: ${props => props.height.mobile};
+   @media screen and (min-width: 1280px) {
+      width: ${props => props.width.desktop};
+      height: ${props => props.height.desktop};
+   }
 `;

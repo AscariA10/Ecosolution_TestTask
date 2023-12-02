@@ -1,8 +1,11 @@
 import { IconContainer } from "../../../components/common-styles/common-styles.styled";
 
-export const Quality = () => {
+export const Quality = ({
+   width = { mobile: "16px", tablet: "16px", desktop: "24px" },
+   height = { mobile: "16px", tablet: "16px", desktop: "24px" },
+}) => {
    return (
-      <IconContainer width="16px" height="16px">
+      <IconContainer width={width} height={height}>
          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                d="M5.77992 9.33337H2.66659C1.93325 9.33337 1.33325 9.93337 1.33325 10.6667V14.6667H5.77992V9.33337Z"
