@@ -1,39 +1,37 @@
 import Slider from "react-slick";
 import "./slick.css";
 import "./slick-theme.css";
-import { Container } from "./Slider.styled";
+
+import { SliderCard } from "../slider-card/SliderCard";
+import { SliderContainer } from "./SuccessfulSlider.styled";
 
 export const SuccessfulSlider = () => {
    const settings = {
-      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
    };
    return (
-      <Container>
-         <h2> Single Item</h2>
+      <SliderContainer>
          <Slider {...settings}>
+            <SliderCard />
             <div>
-               <h3>1</h3>
+               <span>2</span>
             </div>
             <div>
-               <h3>2</h3>
+               <span>3</span>
             </div>
             <div>
-               <h3>3</h3>
+               <span>4</span>
             </div>
             <div>
-               <h3>4</h3>
+               <span>5</span>
             </div>
             <div>
-               <h3>5</h3>
-            </div>
-            <div>
-               <h3>6</h3>
+               <span>6</span>
             </div>
          </Slider>
-      </Container>
+      </SliderContainer>
    );
 };

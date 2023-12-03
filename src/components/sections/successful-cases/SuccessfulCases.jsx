@@ -1,5 +1,5 @@
 import { SectionTitle } from "../../common-components/SectionTitle";
-import { SuccessfulSlider } from "./slider/Slider";
+import { SuccessfulSlider } from "./slider/SuccessfulSlider";
 
 import { Container } from "../../common-styles/common-styles.styled";
 
