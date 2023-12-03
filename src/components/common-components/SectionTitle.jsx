@@ -4,7 +4,7 @@ export const SectionTitle = ({
    title = "sectiontitle",
    textAlign = "start",
    marginLeft = "0",
-   marginBottom = { tablet: "0px", desktop: "0px" },
+   marginBottom = { mobile: "0px", tablet: "0px", desktop: "0px" },
    width = { tablet: "200px", desktop: "300px" },
 }) => {
    return (

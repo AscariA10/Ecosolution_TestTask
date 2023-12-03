@@ -1,15 +1,32 @@
 import styled from "@emotion/styled";
 import { colors } from "../../../common-styles/colors";
 
+export const Card = styled.div`
+   width: 320px;
+
+   @media screen and (min-width: 768px) {
+      width: 342px;
+   }
+`;
+
+export const Image = styled.img`
+   width: 320px;
+
+   @media screen and (min-width: 768px) {
+      width: 342px;
+   }
+`;
+
 export const DescriptionContainer = styled.div`
    position: relative;
-   width: 100%;
+   width: 320px;
    padding: 24px 12px 12px;
 
    display: grid;
    grid-template-columns: 176px 60px;
    gap: 34px 61px;
    justify-content: space-between;
+   background-color: ${colors.CARD_BACKGROUND};
    &::before {
       content: "";
       position: absolute;
@@ -21,6 +38,9 @@ export const DescriptionContainer = styled.div`
       width: 294px;
 
       border-top: 1px solid ${colors.ACCENT};
+   }
+   @media screen and (min-width: 768px) {
+      width: 342px;
    }
 `;
 

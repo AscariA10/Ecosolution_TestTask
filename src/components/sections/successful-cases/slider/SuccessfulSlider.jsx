@@ -5,32 +5,52 @@ import "./slick-theme.css";
 import { SliderCard } from "../slider-card/SliderCard";
 import { SliderContainer } from "./SuccessfulSlider.styled";
 
+import { SlideButton } from "../slide-button/SlideButton";
+
+import { ArrowLeft } from "../../../../assets/svg-components/ArrowLeft";
+import { ArrowRight } from "../../../../assets/svg-components/ArrowRight";
+import turbines from "../../../../assets/images/cases/turbines-mobile.jpg";
+
 export const SuccessfulSlider = () => {
    const settings = {
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
+      centerPadding: "50px",
+      arrows: true,
+      responsive: [
+         {
+            breakpoint: 767,
+            settings: {
+               slidesToShow: 1,
+            },
+         },
+      ],
+      prevArrow: (
+         <SlideButton
+            position={{ top: { mobile: "-92px", tablet: "-105px" }, right: { mobile: "78px" } }}
+         >
+            <ArrowLeft width={{ mobile: "36px" }} height={{ mobile: "36px" }} />
+         </SlideButton>
+      ),
+      nextArrow: (
+         <SlideButton
+            position={{ top: { mobile: "-92px", tablet: "-105px" }, right: { mobile: "0px" } }}
+         >
+            <ArrowRight width={{ mobile: "36px" }} height={{ mobile: "36px" }} />
+         </SlideButton>
+      ),
    };
    return (
       <SliderContainer>
          <Slider {...settings}>
-            <SliderCard />
-            <div>
-               <span>2</span>
-            </div>
-            <div>
-               <span>3</span>
-            </div>
-            <div>
-               <span>4</span>
-            </div>
-            <div>
-               <span>5</span>
-            </div>
-            <div>
-               <span>6</span>
-            </div>
+            <SliderCard image={turbines} />
+            <SliderCard image={turbines} />
+            <SliderCard image={turbines} />
+            <SliderCard image={turbines} />
+            <SliderCard image={turbines} />
+            <SliderCard image={turbines} />
          </Slider>
       </SliderContainer>
    );

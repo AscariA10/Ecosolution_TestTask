@@ -1,13 +1,19 @@
 import { ExternalLink } from "../../../../assets/svg-components/cases/ExternalLink";
 
-import { Title, Date, DescriptionContainer, Description, Link } from "./SliderCard.styled";
+import {
+   Card,
+   Image,
+   Title,
+   Date,
+   DescriptionContainer,
+   Description,
+   Link,
+} from "./SliderCard.styled";
 
-import turbines from "../../../../assets/images/cases/turbines-mobile.jpg";
-
-export const SliderCard = () => {
+export const SliderCard = ({ image }) => {
    return (
-      <div>
-         <img src={turbines} alt="turbines" />
+      <Card>
+         <Image src={image} alt="turbines" />
          <DescriptionContainer>
             <Title>Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”</Title>
             <Link href="#">
@@ -16,6 +22,6 @@ export const SliderCard = () => {
             <Description>Wind Power for auto field irrigation</Description>
             <Date>July 2023</Date>
          </DescriptionContainer>
-      </div>
+      </Card>
    );
 };
