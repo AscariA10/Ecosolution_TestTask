@@ -19,7 +19,10 @@ export const Values = () => {
       <Section>
          <Container>
             <TitleWrapper>
-               <SectionTitle title="main values of our company" />
+               <SectionTitle
+                  title="main values of our company"
+                  width={{ tablet: "272px", desktop: "365px" }}
+               />
                <Definition>
                   EcoSolution envisions a world where sustainable energy solutions power a brighter
                   and cleaner future for all. We aspire to be at the forefront of the global shift

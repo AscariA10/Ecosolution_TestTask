@@ -40,8 +40,8 @@ export const InnerIcon = styled.span`
    height: 32px;
 
    padding: 8px;
-   color: ${colors.accentDark};
-   background-color: ${colors.accent};
+   color: ${colors.ACCENT_DARK};
+   background-color: ${colors.ACCENT};
 
    margin-left: 12px;
    border-radius: 50%;

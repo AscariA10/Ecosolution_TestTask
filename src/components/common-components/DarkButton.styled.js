@@ -6,7 +6,7 @@ export const Button = styled.button`
    align-items: center;
    padding: 10px 16px;
 
-   background-color: ${colors.accent};
+   background-color: ${colors.ACCENT};
    border: none;
    border-radius: 32px;
 
@@ -25,7 +25,7 @@ export const InnerIcon = styled.span`
 
    width: 14px;
    height: 14px;
-   background-color: ${colors.accentDark};
+   background-color: ${colors.ACCENT_DARK};
 
    margin-left: 12px;
    border-radius: 50%;

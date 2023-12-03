@@ -51,5 +51,5 @@ export const MenuButton = styled.button`
    border: none;
    border-radius: 50%;
 
-   background-color: ${colors.menuPrimary};
+   background-color: ${colors.MENU_PRIMARY};
 `;

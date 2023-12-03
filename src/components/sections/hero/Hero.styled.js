@@ -18,9 +18,12 @@ export const Section = styled.section`
 `;
 
 export const HeroWrapper = styled.div`
+   width: 100%;
+   display: grid;
+   grid-template-columns: 100%;
+   align-items: center;
    margin-bottom: 49px;
    @media screen and (min-width: 768px) {
-      display: grid;
       grid-auto-flow: column;
       grid-template-areas:
          "A B"
@@ -65,7 +68,7 @@ export const HeroTitle = styled.h1`
 export const Definition = styled.p`
    width: 320px;
    margin-bottom: 24px;
-
+   justify-self: center;
    text-align: justify;
    @media screen and (min-width: 768px) {
       grid-area: B;
