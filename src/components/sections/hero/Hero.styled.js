@@ -1,7 +1,4 @@
 import styled from "@emotion/styled";
-
-import { LightButton } from "../../common-components/LightButton";
-
 import { colors } from "../../common-styles/colors";
 
 export const Section = styled.section`
@@ -23,11 +20,13 @@ export const HeroWrapper = styled.div`
    grid-template-columns: 100%;
    align-items: center;
    margin-bottom: 49px;
+
    @media screen and (min-width: 768px) {
       grid-auto-flow: column;
       grid-template-areas:
          "A B"
          "A C";
+      grid-template-columns: 301px 342px;
       gap: 0px 65px;
 
       margin-bottom: 41px;
@@ -52,10 +51,14 @@ export const HeroTitle = styled.h1`
    font-weight: 400;
    line-height: 1;
    letter-spacing: 0;
+
    @media screen and (min-width: 768px) {
-      grid-area: A;
       width: 290px;
+      margin-left: 0;
+      margin-right: 0;
       margin-bottom: 0;
+      grid-area: A;
+
       font-size: 48px;
    }
    @media screen and (min-width: 1280px) {

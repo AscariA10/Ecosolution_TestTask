@@ -14,8 +14,6 @@ import {
    HeroWrapper,
 } from "./Hero.styled";
 
-import { ArrowRight } from "../../../assets/svg-components/ArrowRight";
-
 import maskGroup from "../../../assets/images/hero/mask-group.jpg";
 import maskGroup2x from "../../../assets/images/hero/mask-group@2x.jpg";
 import maskGroupTablet from "../../../assets/images/hero/mask-group-tablet.jpg";
@@ -38,9 +36,7 @@ export const Hero = () => {
                   marginTop={{ mobile: "auto", tablet: "43px", desktop: "20px" }}
                   marginBottom={{ mobile: "49px", tablet: "43px" }}
                   marginLeft={{ mobile: "auto", tablet: "0" }}
-               >
-                  <ArrowRight />
-               </LightButton>
+               />
             </HeroWrapper>
             <AddressWrapper>
                <Address>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>

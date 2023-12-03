@@ -14,8 +14,8 @@ export const Button = styled.button`
    margin-right: ${props => props.marginRight};
    margin-bottom: 0;
 
-   background-color: ${colors.backgroundLight};
-   border: 1px solid ${colors.accent};
+   background-color: ${colors.BACKGROUND_LIGHT};
+   border: 1px solid ${colors.ACCENT};
    border-radius: 32px;
 
    font-size: 16px;

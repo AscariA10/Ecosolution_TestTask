@@ -1,7 +1,8 @@
 import { Button, InnerIcon } from "./LightButton.styled";
 
+import { ArrowRight } from "../../assets/svg-components/ArrowRight";
+
 export const LightButton = ({
-   children,
    title = "button",
    marginTop = { mobile: "", tablet: "", desktop: "" },
    marginLeft = { mobile: "", tablet: "", desktop: "" },
@@ -16,7 +17,9 @@ export const LightButton = ({
          marginBottom={marginBottom}
       >
          {title}
-         <InnerIcon>{children}</InnerIcon>
+         <InnerIcon>
+            <ArrowRight />
+         </InnerIcon>
       </Button>
    );
 };

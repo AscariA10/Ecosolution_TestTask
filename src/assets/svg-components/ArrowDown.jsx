@@ -2,7 +2,10 @@ import { IconContainer } from "../../components/common-styles/common-styles.styl
 
 export const ArrowDown = () => {
    return (
-      <IconContainer width="10px" height="9px">
+      <IconContainer
+         width={{ mobile: "16px", tablet: "", desktop: "" }}
+         height={{ mobile: "16px", tablet: "", desktop: "" }}
+      >
          <svg viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                d="M7.27588 5.31006L4.99963 7.33339L2.72338 5.31006"

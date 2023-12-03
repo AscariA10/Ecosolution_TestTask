@@ -3,7 +3,7 @@ import { colors } from "../common-styles/colors";
 
 export const Title = styled.h2`
    display: block;
-   width: 320px;
+   width: ${props => props.width.mobile};
    margin-left: ${props => props.marginLeft};
    margin-right: auto;
    margin-bottom: 24px;
