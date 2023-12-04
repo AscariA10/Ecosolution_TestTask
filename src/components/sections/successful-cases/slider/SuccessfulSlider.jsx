@@ -29,14 +29,20 @@ export const SuccessfulSlider = () => {
       ],
       prevArrow: (
          <SlideButton
-            position={{ top: { mobile: "-92px", tablet: "-105px" }, right: { mobile: "78px" } }}
+            position={{
+               top: { mobile: "-92px", tablet: "-105px", desktop: "-206px" },
+               right: { mobile: "78px", desktop: "108px" },
+            }}
          >
             <ArrowLeft width={{ mobile: "36px" }} height={{ mobile: "36px" }} />
          </SlideButton>
       ),
       nextArrow: (
          <SlideButton
-            position={{ top: { mobile: "-92px", tablet: "-105px" }, right: { mobile: "0px" } }}
+            position={{
+               top: { mobile: "-92px", tablet: "-105px", desktop: "-206px" },
+               right: { mobile: "0px" },
+            }}
          >
             <ArrowRight width={{ mobile: "36px" }} height={{ mobile: "36px" }} />
          </SlideButton>

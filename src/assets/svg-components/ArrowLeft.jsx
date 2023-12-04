@@ -10,18 +10,18 @@ export const ArrowLeft = ({
             <path
                d="M14.3542 8.89343L5.24925 17.9984L14.3542 27.1034"
                stroke="#173D33"
-               stroke-width="1.5"
-               stroke-miterlimit="10"
-               stroke-linecap="round"
-               stroke-linejoin="round"
+               strokeWidth="1.5"
+               strokeMiterlimit="10"
+               strokeLinecap="round"
+               strokeLinejoin="round"
             />
             <path
                d="M30.749 17.9988H5.50402"
                stroke="#173D33"
-               stroke-width="1.5"
-               stroke-miterlimit="10"
-               stroke-linecap="round"
-               stroke-linejoin="round"
+               strokeWidth="1.5"
+               strokeMiterlimit="10"
+               strokeLinecap="round"
+               strokeLinejoin="round"
             />
          </svg>
       </IconContainer>

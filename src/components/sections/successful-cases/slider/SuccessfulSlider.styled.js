@@ -9,4 +9,8 @@ export const SliderContainer = styled.div`
       width: 708px;
       padding-top: 38px;
    }
+   @media screen and (min-width: 1280px) {
+      width: 1240px;
+      padding-top: 120px;
+   }
 `;

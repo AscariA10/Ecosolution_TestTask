@@ -11,9 +11,15 @@ export const Button = styled.div`
    top: ${props => props.position.top.mobile};
    right: ${props => props.position.right.mobile};
 
-   border: 1px solid ${colors.ACCENT};
+   border: 1px solid ${colors.ACCENT_DARK};
    border-radius: 50%;
    @media screen and (min-width: 768px) {
       top: ${props => props.position.top.tablet};
+   }
+   @media screen and (min-width: 1280px) {
+      width: 84px;
+      height: 84px;
+      top: ${props => props.position.top.desktop};
+      right: ${props => props.position.right.desktop};
    }
 `;

@@ -5,12 +5,14 @@ export const Button = styled.button`
    display: ${props => (props.alwaysVisible ? "flex" : "none")};
    align-items: center;
    padding: 10px 16px;
+   width: 130px;
 
    background-color: ${colors.ACCENT};
    border: none;
    border-radius: 32px;
 
    font-size: 16px;
+   line-height: 1.18;
    letter-spacing: -0.04em;
 
    @media (min-width: 768px) {
