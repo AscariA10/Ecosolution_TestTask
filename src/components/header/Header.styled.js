@@ -32,8 +32,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const PageLogoWrapper = styled.a`
-   min-width: 269px;
-   height: 40px;
+   width: 270px;
    @media (min-width: 768px) {
       margin-right: 247px;
    }
@@ -44,6 +43,7 @@ export const PageLogoWrapper = styled.a`
 
 export const MenuButton = styled.button`
    display: flex;
+   width: 40px;
    align-items: center;
    justify-content: center;
    padding: 12px;
