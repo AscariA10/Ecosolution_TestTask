@@ -6,6 +6,7 @@ export const colors = {
    BACKGROUND_LIGHT: "#fff",
    MAIN_FONT: "#173D33",
    MENU_PRIMARY: "#DCEFD8",
+   ERROR: "#D28B8B",
 };
 
 Object.freeze(colors);

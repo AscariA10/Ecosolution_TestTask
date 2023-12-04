@@ -21,7 +21,7 @@ export const SuccessfulSlider = () => {
       arrows: true,
       responsive: [
          {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
                slidesToShow: 1,
             },

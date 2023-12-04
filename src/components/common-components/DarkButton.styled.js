@@ -5,7 +5,7 @@ export const Button = styled.button`
    display: ${props => (props.alwaysVisible ? "flex" : "none")};
    align-items: center;
    padding: 10px 16px;
-   width: 130px;
+   width: ${props => props.width.mobile};
 
    background-color: ${colors.ACCENT};
    border: none;

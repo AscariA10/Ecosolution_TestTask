@@ -3,7 +3,6 @@ import { useState } from "react";
 import { SectionTitle } from "../../common-components/SectionTitle";
 import { DarkButton } from "../../common-components/DarkButton";
 
-import { Container } from "../../common-styles/common-styles.styled";
 import { Section, QuestionList, QuestionItem, Question, Answer, Icon, Appeal } from "./Faq.styled";
 
 import { Plus } from "../../../assets/svg-components/faq/Plus";
@@ -47,11 +46,11 @@ const questions = [
 ];
 
 export const Faq = () => {
-   const [activeAnswer, setActiveAnswer] = useState(-1);
+   const [activeAnswer, setActiveAnswer] = useState(0);
 
    return (
       <Section>
-         <SectionTitle title="Frequently Asked Questions" />
+         <SectionTitle title="Frequently Asked Questions" width={{ tablet: "347px" }} />
          <QuestionList>
             {questions.map((element, index) => {
                return (
@@ -63,7 +62,19 @@ export const Faq = () => {
                      }}
                   >
                      <Question>
-                        <Icon>{Number(activeAnswer) === index ? <Minus /> : <Plus />}</Icon>
+                        <Icon>
+                           {Number(activeAnswer) === index ? (
+                              <Minus
+                                 width={{ mobile: "16px", tablet: "", desktop: "28px" }}
+                                 height={{ mobile: "16px", tablet: "", desktop: "28px" }}
+                              />
+                           ) : (
+                              <Plus
+                                 width={{ mobile: "16px", tablet: "", desktop: "28px" }}
+                                 height={{ mobile: "16px", tablet: "", desktop: "28px" }}
+                              />
+                           )}
+                        </Icon>
                         {element.question}
                      </Question>
                      {Number(activeAnswer) === index ? <Answer>{element.answer}</Answer> : null}
@@ -72,7 +83,11 @@ export const Faq = () => {
             })}
          </QuestionList>
          <Appeal>Didn't find the answer to your question?</Appeal>
-         <DarkButton alwaysVisible={true} title="Contact Us" />
+         <DarkButton
+            alwaysVisible={true}
+            width={{ mobile: "130px", tablet: "130px", desktop: "130px" }}
+            title="Contact Us"
+         />
       </Section>
    );
 };
