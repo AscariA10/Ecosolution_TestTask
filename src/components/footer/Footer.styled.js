@@ -30,14 +30,6 @@ export const Address = styled.address`
    margin-top: 24px;
    text-align: center;
    font-style: normal;
-
-   @media screen and (min-width: 768px) {
-      margin-left: 0;
-      margin-right: 77px;
-   }
-   @media screen and (min-width: 1280px) {
-      margin-right: 492px;
-   }
 `;
 
 export const Email = styled.a`
@@ -48,8 +40,7 @@ export const Email = styled.a`
    margin-top: 16px;
 
    text-decoration: none;
-   @media screen and (min-width: 768px) {
-      margin: 0;
+
    }
 `;
 
